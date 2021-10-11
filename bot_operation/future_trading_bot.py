@@ -2,7 +2,7 @@
 import ccxt
 import time
 import datetime
-import util
+from bot_operation import util
 import argparse
 
 parser = argparse.ArgumentParser(description='')

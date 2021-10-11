@@ -2,3 +2,6 @@ requests
 ccxt
 django~=3.0.14
 mysqlclient
+django-bootstrap4
+pillow
+django-pydenticon
