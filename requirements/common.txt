@@ -1,0 +1,4 @@
+requests
+ccxt
+django~=3.0.14
+mysqlclient
