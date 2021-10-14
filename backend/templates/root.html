@@ -1,5 +1,16 @@
 {% extends "layout.html"%}
 
 {% block content %}
-    Hello
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                Trading Bot
+                {% if user.is_trading %}
+                    <a href="{% url "trading_bot:end_trading" %}" class="btn btn-primary">매매중지</a>
+                {% else %}
+                    <a href="{% url "trading_bot:start_trading" %}" class="btn btn-primary">매매시작</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

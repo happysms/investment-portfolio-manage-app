@@ -11,9 +11,9 @@ from django_pydenticon.views import image as pydenticon_image
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login_required(TemplateView.as_view(template_name='root.html')), name='root'),
-    # path('', include("trading_bot.urls")),
+    path('', include("trading_bot.urls")),
     path('accounts/', include('accounts.urls')),
-    path('identicon/image/<path:data>/', pydenticon_image, name='pydenticon_image'),
+    path('indenticon/image/<path:data>', pydenticon_image, name='pydenticon_image'),
 ]
 
 if settings.DEBUG:
